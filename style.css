@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-shadow: border-box;
+}
+body
+{
+  background: #1f1b24;
+}
+#load 
+{
+  display: block;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+#load-box 
+{
+  position: relative;
+  height: 160px;
+  width: 160px;
+  border: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-radius: 50%;
+  animation: ring 1.2s infinite linear;
+}
+@keyframes ring 
+{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+#load-name 
+{
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Carter One', Monospace;
+}
+#container 
+{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #060606;
+}
+#show 
+{
+  display: none;
+}
+h1
+{
+  margin-top: 1rem;
+  color: #f00;
+  font-size: 13vw;
+  letter-spacing: .5rem;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+#time 
+{
+  color: #fff;
+  font-size: 12vw;
+  font-family: 'Carter One';
+  text-align: center;
+  border-bottom: 4px solid red;
+  border-top: 4px solid red;
+}
+#text 
+{
+  margin-top: 3rem;
+  color: #f00;
+  font-size: 15vw;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+span 
+{
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+.digit
+{
+  color: #fff;
+  text-decoration: none;
+}
+.open 
+{
+  color: #fff;
+}
+.closed 
+{
+  opacity: .7;
+  text-decoration: none;
+}
+.eye 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#eye-pic
+{
+  height: auto;
+  width: 80%;
+}
+#main 
+{
+  display: block;
+  position: fixed;
+}
+#btn 
+{
+  display: block;
+}
+#btn-txt 
+{
+  font-size: 10vw;
+  font-family: 'Carter One';
+  color: #fff;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 6px gray,
+              0 0 12px gray,
+              0 0 24px gray;
+ text-shadow: 0 0 10px #111,
+              0 0 15px #111,
+              0 0 20px #111,
+              0 0 25px #fff;
+ padding: 5px 20px 5px 20px;
+ animation: knock 10s infinite;
+}
+@keyframes knock 
+{
+  0% {
+        transform: scale(1);
+      }
+      2.5% {
+        transform: scale(0.5);
+      }
+      5% {
+        transform: scale(1.2);
+      }
+      7.5% {
+        transform: scale(0.85);
+      }
+      10% {
+        transform: scale(1);
+      }
+      10.5% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+#img-box 
+{
+  display: none;
+}
+#ghost 
+{
+  display: none;
+  height: auto;
+  width: 100%;
+  transform: scale(2.2);
+}
